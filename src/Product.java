@@ -5,12 +5,17 @@ import java.util.Random;
 public class Product {
     private String name;
     private int price;
+
     private static final List<String> names = List.of("BananaChips", "Candy", "Water", "Coca-cola");
 
     public Product(int i) {
         Random rnd = new Random();
         name = names.get(i);
         price = rnd.nextInt(36)+5;
+    }
+
+    public Product() {
+
     }
 
     public String getName() {
@@ -31,6 +36,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return  name + " " + price ;
+
+        return  name + " " + price;
     }
 }

@@ -6,5 +6,6 @@ public class Main {
     public static void run(){
         VandingMachine.fillList();
         VandingMachine.print();
+        VandingMachine.cash();
     }
 }
